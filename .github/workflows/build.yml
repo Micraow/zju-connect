@@ -24,8 +24,8 @@ jobs:
     strategy:
       matrix:
         # Include amd64 on all platforms.
-        goos: [ windows, linux, darwin ]
-        goarch: [ amd64, 386 ]
+        goos: [ linux ]
+        goarch: [ amd64 ]
         exclude:
           # Exclude i386 on darwin.
           - goarch: 386
